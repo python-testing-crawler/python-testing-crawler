@@ -1,0 +1,11 @@
+<ul>
+  {% for page_name in ['a', 'b', 'c', 'd', 'gallery'] %}
+    <li>
+      <A HrEf="/page-{{ page_name }}"  {# deliberately mixed case! #}
+         id="menu-link-page-{{ page_name }}-id"
+         class="menu-link menu-link-page-{{ page_name }}-class">
+        Page {{ page_name }}
+      </A>
+    </li>
+  {% endfor %}
+</ul>

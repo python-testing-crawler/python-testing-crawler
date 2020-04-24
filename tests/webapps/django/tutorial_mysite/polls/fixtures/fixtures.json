@@ -1,0 +1,26 @@
+[
+    {
+        "model": "polls.Question",
+        "pk": 1,
+        "fields": {
+          "question_text": "Who am I?",
+          "pub_date": "2020-01-01"
+        }
+    },
+    {
+        "model": "polls.Question",
+        "pk": 2,
+        "fields": {
+          "question_text": "What am I?",
+          "pub_date": "2020-01-01"
+        }
+    },
+    {
+        "model": "polls.Question",
+        "pk": 3,
+        "fields": {
+          "question_text": "What is for dinner?",
+          "pub_date": "2020-01-01"
+        }
+    }
+]

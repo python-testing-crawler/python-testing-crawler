@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h2>Page D</h2>
+
+<p>This has forms.</p>
+
+<form name="form-get-name" id="form-get-id" class="form-get-class" method="GET">
+    <input name="foo" value="abc"></input>
+    <input name="bar" value="xyz"></input>
+    <input type="submit">Submit</input>
+</form>
+
+<form name="form-post-name" id="form-post-id" class="form-post-class" method="POST">
+    <input name="foo" value="abc"></input>
+    <input name="bar" value="xyz"></input>
+    <input type="submit">Submit</input>
+</form>
+
+{% endblock %}

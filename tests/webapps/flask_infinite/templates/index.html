@@ -1,0 +1,6 @@
+<html>
+    <body>
+        {% set next_num = request.args.get('num', 0)|int + 1 %}
+        <a href="/?num={{ next_num }}">keep going!</a>
+    </body>
+</html>
