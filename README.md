@@ -144,3 +144,10 @@ Using `should_process_handlers`, you can register functions that take a `Node` a
 Using `check_response_handlers`, you can register functions that take a `Node` and response object (specific to your test client) and return a bool of whether the response should constitute an error.
 
 If your function returns `True`, the Crawler with throw an exception.
+
+## Examples
+
+There are currently Flask and Django examples in [the tests](tests/).
+
+See https://github.com/python-testing-crawler/flaskr for an example of integrating into an existing application, using Flaskr, the Flask tutorial application.
+
