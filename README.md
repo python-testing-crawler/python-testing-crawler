@@ -129,11 +129,11 @@ PERMISSIVE_RULE_SET = [
 
 The crawler builds up a graph of your web application. It can be interrogated via `crawler.graph` when the crawl is finished.
 
-See `Node` in docs (TODO).
+See [the graph module](python_testing_crawler/graph.py) for the defintion of `Node` objects.
 
 ## Handlers
 
-Two hooks points are provided:
+Two hooks points are provided. These operate on `Node` objects (see above).
 
 ### Whether to process a Node
 
