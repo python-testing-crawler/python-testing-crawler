@@ -1,4 +1,4 @@
-name: Tox testing
+name: Tests
 
 on: [push]
 
