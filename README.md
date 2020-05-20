@@ -22,7 +22,7 @@ $ pip install python-testing-crawler
 
 Create a crawler using your framework's existing test client, tell it where to start and what rules to obey, then set it off:
 
-```
+```python
 from python_testing_crawler import Crawler
 from python_testing_crawler import Rule, Request
 
@@ -82,7 +82,7 @@ Supported actions:
 
 #### Follow all local/relative links
 
-```
+```python
 HYPERLINKS_ONLY_RULE_SET = [
     Rule(ANCHOR, '/.*', GET, Request()),
     Rule(AREA, '/.*', GET, Request()),
@@ -91,7 +91,7 @@ HYPERLINKS_ONLY_RULE_SET = [
 
 #### Request but do not spider all links
 
-```
+```python
 REQUEST_ONLY_EXTERNAL_RULE_SET = [
     Rule(ANCHOR, '.*', GET, Request(only=True)),
     Rule(AREA, '.*', GET, Request(only=True)),
@@ -104,7 +104,7 @@ This is useful for finding broken links.  You can also check `<link>` tags from 
 
 #### Submit forms with GET or POST
 
-```
+```python
 SUBMIT_GET_FORMS_RULE_SET = [
     Rule(FORM, '.*', GET, Request())
 ]
@@ -118,7 +118,7 @@ Setting `Request(params={...}` on a specific form lets you specify what values t
 
 #### Allow some routes to fail
 
-```
+```python
 PERMISSIVE_RULE_SET = [
     Rule('.*', '.*', GET, Allow([*range(400, 600)])),
     Rule('.*', '.*', POST, Allow([*range(400, 600)]))
