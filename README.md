@@ -1,4 +1,8 @@
 # Python Testing Crawler
+[![PyPI version](https://badge.fury.io/py/python-testing-crawler.svg)](https://badge.fury.io/py/python-testing-crawler)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/python-testing-crawler.svg)](https://pypi.python.org/pypi/python-testing-crawler/)
+[![GitHub license](https://img.shields.io/github/license/python-testing-crawler/python-testing-crawler)](https://github.com/python-testing-crawler/python-testing-crawler/blob/master/LICENSE.txt)
+[![GitHub Actions (Tests)](https://github.com/python-testing-crawler/python-testing-crawler/workflows/Tests/badge.svg)](https://github.com/python-testing-crawler/python-testing-crawler)
 
 _A crawler for automated functional testing of a web application_
 
