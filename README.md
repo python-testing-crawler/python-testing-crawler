@@ -128,7 +128,7 @@ SUBMIT_POST_FORMS_RULE_SET = [
 ]
 ```
 
-Setting `Request(params={...}` on a specific form lets you specify what values to submit.`
+Forms are submitted with their default values, unless overridden using `Request(params={...})` for a specific form target or excluded using (globally) using the `ignore_form_fields` parameter to `Crawler` (necessary for e.g. CSRF token fields).
 
 #### Allow some routes to fail
 
