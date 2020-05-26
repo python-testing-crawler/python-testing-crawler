@@ -71,12 +71,13 @@ It depends on your framework:
 | Param | Description |
 | --- | --- |
 | `initial_paths` |  list of paths/URLs to start from
-| `rules` | list of rules
-| `path_attrs` | list of attribute names to get paths/URLs from; defaults to "href" but include "src" if you want to check e.g. `<link>`, `<script>` or even `<img>`
-| `ignore_css_selectors` |any elements matching this list of CSS selectors will be ignored
+| `rules` | list of Rules to control the crawler; see below
+| `path_attrs` | list of attribute names to extract paths/URLs from; defaults to "href" -- include "src" if you want to check e.g. `<link>`, `<script>` or even `<img>`
+| `ignore_css_selectors` | any elements matching this list of CSS selectors will be ignored when extracting links
 | `ignore_form_fields` | list of form input names to ignore when determining the identity/uniqueness of a form. Include CSRF token field names here.
-| `max_requests` | crawler will raise an exception if this limit is exceeded
-| `capture_exceptions` | keep going on any exception and fail at the end of the crawl instead of during (default `True`)
+| `max_requests` | Crawler will raise an exception if this limit is exceeded
+| `capture_exceptions` | upon encountering an exception, keep going and fail at the end of the crawl instead of during (default `True`)
+| `output_summary` | print summary statistics and any captured exceptions and tracebacks at the end of the crawl (default `True`)
 | `should_process_handlers` | list of "should process" handlers; see Handlers section
 | `check_response_handlers` | list of "check response" handlers; see Handlers section
 
@@ -88,7 +89,7 @@ Rules are four-tuples:
 
 ```(source element, URL/path, HTTP method, action to take)```
 
-These are matched against every link or form that the crawler encounters, in reverse priority order.
+These are matched against every link or form that the crawler encounters, with the last matching rule winning.
 
 Supported actions:
 
