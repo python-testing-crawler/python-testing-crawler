@@ -72,8 +72,8 @@ These are matched against every link or form that the crawler encounters, in rev
 Supported actions:
 
 1. `Request(only=False, params=None)` -- follow a link or submit a form
-  * `only=True` will retrieve a page but _not_ spider its links.
-  * the dict `params` allows you to specify _overrides_ for a form's default values
+    - `only=True` will retrieve a page but _not_ spider its links.
+    -  the dict `params` allows you to specify _overrides_ for a form's default values
 1. `Ignore` -- do nothing
 1. `Allow` -- allow a HTTP status code, i.e. do not consider it to be an error.
 
