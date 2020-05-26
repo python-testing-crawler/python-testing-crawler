@@ -20,6 +20,12 @@ Features:
 
 Works with the test clients for [Flask](https://flask.palletsprojects.com/en/1.1.x/testing/) (inc [Flask-WebTest](https://flask-webtest.readthedocs.io/en/latest/)), [Django](https://docs.djangoproject.com/en/3.0/topics/testing/tools/) and [WebTest](https://docs.pylonsproject.org/projects/webtest/en/latest/).
 
+## Why should I use this?
+
+Here's an example: [_Flaskr_](https://flask.palletsprojects.com/en/1.1.x/tutorial/), the Flask tutorial application has [166 lines of test code](https://github.com/pallets/flask/tree/master/examples/tutorial/tests) to achieve 100% test coverage.
+
+[Using Python Testing Crawler](https://github.com/python-testing-crawler/flaskr/blob/master/tests/test_crawl.py) in a similar way to the Usage example below, we can hit 73% with very little effort. Disclaimer: Of course! It's not the same quality or utility of testing! But it is better than no tests, a complement to hand-written unit or functional tests and a useful stopgap.
+
 ## Installation
 
 ```
