@@ -8,7 +8,15 @@ _A crawler for automated functional testing of a web application_
 
 Crawling a server-side-rendered web application is a _low cost_ way to get _low quality_ test coverage of your JavaScript-light web application.
 
-If you have only partial test coverage of your routes, but still want to protect against silly mistakes, then this is for you. It follows links and can post forms.
+If you have only partial test coverage of your routes, but still want to protect against silly mistakes, then this is for you. 
+
+Features:
+
+* Selectively spider pages and resources, or just request them
+* Submit forms, and control what values to send
+* Ignore links by source using CSS selectors
+* Fail fast or collect many errors
+* Configurable using straightforward rules
 
 Works with the test clients for [Flask](https://flask.palletsprojects.com/en/1.1.x/testing/) (inc [Flask-WebTest](https://flask-webtest.readthedocs.io/en/latest/)), [Django](https://docs.djangoproject.com/en/3.0/topics/testing/tools/) and [WebTest](https://docs.pylonsproject.org/projects/webtest/en/latest/).
 
