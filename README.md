@@ -59,6 +59,13 @@ If you need to authorise the client's session, e.g. login, then you should that 
 
 It is also a good idea to create enough data, via fixtures or otherwise, to expose enough endpoints.
 
+### How do I setup a test client?
+
+It depends on your framework:
+
+* Flask: https://flask.palletsprojects.com/en/1.1.x/testing/
+* Django: https://docs.djangoproject.com/en/3.0/topics/testing/tools/
+
 ## Crawler Options
 
 | Param | Description |
