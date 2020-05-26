@@ -10,7 +10,7 @@ Crawling a server-side-rendered web application is a _low cost_ way to get _low 
 
 If you have only partial test coverage of your routes, but still want to protect against silly mistakes, then this is for you. It follows links and can post forms.
 
-Works with the test clients for Flask (inc Flask-WebTest), Django and Zope/WebTest.
+Works with the test clients for [Flask](https://flask.palletsprojects.com/en/1.1.x/testing/) (inc [Flask-WebTest](https://flask-webtest.readthedocs.io/en/latest/)), [Django](https://docs.djangoproject.com/en/3.0/topics/testing/tools/) and [WebTest](https://docs.pylonsproject.org/projects/webtest/en/latest/).
 
 ## Installation
 
