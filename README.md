@@ -83,21 +83,21 @@ It depends on your framework:
 
 ## Rules
 
-The crawler has to be told what URLs to follow, what forms to post and what to ignore.
+The crawler has to be told what URLs to follow, what forms to post and what to ignore, using Rules.
 
-Rules are four-tuples:
+Rules are made of four parameters:
 
-```(source element, URL/path, HTTP method, action to take)```
+```Rule(<source element regex>, <target URL/path regex>, <HTTP method>, <action to take>)```
 
-These are matched against every link or form that the crawler encounters, with the last matching rule winning.
+These are matched against every HTML element that the crawler encounters, with the last matching rule winning.
 
-Supported actions:
+Actions must be one of the following objects:
 
 1. `Request(only=False, params=None)` -- follow a link or submit a form
-    - `only=True` will retrieve a page but _not_ spider its links.
+    - `only=True` will retrieve a page/resource but _not_ spider its links.
     -  the dict `params` allows you to specify _overrides_ for a form's default values
-1. `Ignore` -- do nothing
-1. `Allow` -- allow a HTTP status code, i.e. do not consider it to be an error.
+1. `Ignore()` -- do nothing / skip
+1. `Allow(status_codes)` -- allow a HTTP status in the supplied list, i.e. do not consider it an error.
 
 
 ### Example Rules
