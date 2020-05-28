@@ -147,6 +147,8 @@ PERMISSIVE_RULE_SET = [
 ]
 ```
 
+If any HTTP error (400-599) is encountered for any request, allow it; do not error.
+
 ## Crawl Graph
 
 The crawler builds up a graph of your web application. It can be interrogated via `crawler.graph` when the crawl is finished.
