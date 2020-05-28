@@ -106,8 +106,8 @@ Supported actions:
 
 ```python
 HYPERLINKS_ONLY_RULE_SET = [
-    Rule(ANCHOR, '/.*', GET, Request()),
-    Rule(AREA, '/.*', GET, Request()),
+    Rule('a', '/.*', 'GET', Request()),
+    Rule('area', '/.*', 'GET', Request()),
 ]
 ```
 
@@ -115,24 +115,24 @@ HYPERLINKS_ONLY_RULE_SET = [
 
 ```python
 REQUEST_ONLY_EXTERNAL_RULE_SET = [
-    Rule(ANCHOR, '.*', GET, Request(only=True)),
-    Rule(AREA, '.*', GET, Request(only=True)),
+    Rule('a', '.*', 'GET', Request(only=True)),
+    Rule('area', '.*', 'GET', Request(only=True)),
 ]
 ```
 
 This is useful for finding broken links.  You can also check `<link>` tags from the `<head>` if you include the following rule plus set a Crawler's `path_attrs` to `("HREF", "SRC")`.
 
-```Rule(LINK, '.*', GET, Request())```
+```Rule('link', '.*', 'GET', Request())```
 
 #### Submit forms with GET or POST
 
 ```python
 SUBMIT_GET_FORMS_RULE_SET = [
-    Rule(FORM, '.*', GET, Request())
+    Rule('form', '.*', 'GET', Request())
 ]
 
 SUBMIT_POST_FORMS_RULE_SET = [
-    Rule(FORM, '.*', POST, Request())
+    Rule('form', '.*', 'POST', Request())
 ]
 ```
 
@@ -142,8 +142,8 @@ Forms are submitted with their default values, unless overridden using `Request(
 
 ```python
 PERMISSIVE_RULE_SET = [
-    Rule('.*', '.*', GET, Allow([*range(400, 600)])),
-    Rule('.*', '.*', POST, Allow([*range(400, 600)]))
+    Rule('.*', '.*', 'GET', Allow([*range(400, 600)])),
+    Rule('.*', '.*', 'POST', Allow([*range(400, 600)]))
 ]
 ```
 
