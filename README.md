@@ -38,7 +38,7 @@ Create a crawler using your framework's existing test client, tell it where to s
 
 ```python
 from python_testing_crawler import Crawler
-from python_testing_crawler import Rule, Request
+from python_testing_crawler import Rule, Request, Ignore, Allow
 
 def test_crawl_all():
     client = ## ... existing testing client
