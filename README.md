@@ -120,7 +120,7 @@ REQUEST_ONLY_EXTERNAL_RULE_SET = [
 ]
 ```
 
-This is useful for finding broken links.  You can also check `<link>` tags from the `<head>` if you include the following rule plus set a Crawler's `path_attrs` to `("HREF", "SRC")`.
+This is useful for finding broken links.  You can also check `<link>` tags from the `<head>` if you include the following rule _plus_ set the Crawler's `path_attrs` to `("HREF", "SRC")`.
 
 ```Rule('link', '.*', 'GET', Request())```
 
