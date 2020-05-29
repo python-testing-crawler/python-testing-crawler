@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python-testing-crawler",
-    version="0.2.0",
+    version="0.2.1",
     author="Chris Wood",
     description="Python Test Crawler",
     long_description=long_description,
@@ -19,7 +19,7 @@ setuptools.setup(
         'dataclasses;python_version<"3.7"',  # backport
     ],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
         "Operating System :: Unix",
