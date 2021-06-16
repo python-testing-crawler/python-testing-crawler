@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python-testing-crawler",
-    version="0.2.1",
+    version="0.2.2",
     author="Chris Wood",
     description="Python Test Crawler",
     long_description=long_description,
