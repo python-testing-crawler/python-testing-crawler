@@ -80,10 +80,10 @@ class FlaskClientWrapper(BaseClientWrapper):
         self.ignore_css_selectors = ignore_css_selectors or []
 
     def get(self, path, fields=None):
-        return self.client.get(path, data=fields)
+        return self.client.get(path, query_string=fields or None)
 
     def post(self, path, fields=None):
-        return self.client.post(path, data=fields)
+        return self.client.post(path, data=fields or None)
 
     def get_content(self, response):
         return response.data
