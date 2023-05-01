@@ -1,5 +1,5 @@
 beautifulsoup4==4.9.0
-Flask==1.1.2
+Flask==2.3.2
 Django==2.2.24
 pytest==5.4.1
 pytest-cov==2.8.1
